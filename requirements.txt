@@ -2,3 +2,7 @@ datasets==3.6.0
 scikit-learn==1.7.2
 matplotlib==3.10.6
 numpy==2.2.6
+laya==0.4.8
+transformers==5.20.0
+# CPU wheel: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
