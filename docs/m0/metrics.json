@@ -1,0 +1,644 @@
+{
+  "calibration_mean_confidence": 0.5156115820527423,
+  "calibration_n": 1990,
+  "cost": {
+    "0.02": {
+      "gate_only_usd": 4.25,
+      "gate_plus_shadow_usd": 4.37,
+      "llm_only_usd": 6.0,
+      "shadow_fraction_of_llm_only": 0.02,
+      "shadow_usd": 0.12,
+      "teacher_usd_per_call": 0.002
+    },
+    "0.05": {
+      "gate_only_usd": 4.25,
+      "gate_plus_shadow_usd": 4.55,
+      "llm_only_usd": 6.0,
+      "shadow_fraction_of_llm_only": 0.05,
+      "shadow_usd": 0.3,
+      "teacher_usd_per_call": 0.002
+    }
+  },
+  "figures": [
+    "docs/m0/figures/accepted-accuracy.png",
+    "docs/m0/figures/coverage-confidence.png",
+    "docs/m0/figures/reliability.png",
+    "docs/m0/figures/shadow-5pct.png"
+  ],
+  "fit_n": 11303,
+  "label_set_size": 58,
+  "locked_threshold": {
+    "calibration_accepted": 1018,
+    "calibration_accepted_accuracy": 0.9607072691552063,
+    "calibration_coverage": 0.5115577889447236,
+    "status": "primary",
+    "threshold": 0.5
+  },
+  "mean_characters": {
+    "adversarial": 121.01333333333334,
+    "global": 74.48933333333333,
+    "id": 34.360625,
+    "language": 39.0,
+    "long": 265.515,
+    "new_class": 34.60333333333333
+  },
+  "model": "tfidf_word_1_2_logistic_regression",
+  "p7": false,
+  "prediction_commit": "bbe1d0bcdc8784d8da364aa7a7065b3d4b7a2246",
+  "primary_gates": {
+    "P1": true,
+    "P2": true,
+    "P3": false,
+    "P4": false,
+    "P5": false,
+    "P6": false,
+    "candidates": [
+      "adversarial"
+    ],
+    "confidence_shift": 0.1443552889130696,
+    "core_pass": false,
+    "coverage_shift": 0.2198911222780569,
+    "shadow_detected_slices": [],
+    "teacher_necessary_slices": []
+  },
+  "primary_report": {
+    "adversarial": {
+      "accepted_accuracy": 0.4838709677419355,
+      "accuracy": 0.24,
+      "coverage": 0.20666666666666667,
+      "mean_confidence": 0.4035229413421082,
+      "n": 300,
+      "n_accepted": 62
+    },
+    "global": {
+      "accepted_accuracy": 0.9085714285714286,
+      "accuracy": 0.5486666666666666,
+      "coverage": 0.2916666666666667,
+      "mean_confidence": 0.3712562931396727,
+      "n": 3000,
+      "n_accepted": 875
+    },
+    "id": {
+      "accepted_accuracy": 0.9551282051282052,
+      "accuracy": 0.794375,
+      "coverage": 0.4875,
+      "mean_confidence": 0.5108352472922312,
+      "n": 1600,
+      "n_accepted": 780
+    },
+    "language": {
+      "accepted_accuracy": 0.9047619047619048,
+      "accuracy": 0.1525,
+      "coverage": 0.0525,
+      "mean_confidence": 0.13665223231856222,
+      "n": 400,
+      "n_accepted": 21
+    },
+    "long": {
+      "accepted_accuracy": 1.0,
+      "accuracy": 0.605,
+      "coverage": 0.0025,
+      "mean_confidence": 0.14521314051342807,
+      "n": 400,
+      "n_accepted": 1
+    },
+    "new_class": {
+      "accepted_accuracy": 0.0,
+      "accuracy": 0.0,
+      "coverage": 0.03666666666666667,
+      "mean_confidence": 0.20876484072006568,
+      "n": 300,
+      "n_accepted": 11
+    }
+  },
+  "primary_seed": 42,
+  "primary_shadow": {
+    "0.02": {
+      "end": {
+        "adversarial": {
+          "accepted_accuracy": 1.0,
+          "flags": false,
+          "n_shadow_accepted": 1,
+          "wilson_upper": 0.9999999999999999
+        },
+        "global": {
+          "accepted_accuracy": 0.85,
+          "flags": false,
+          "n_shadow_accepted": 20,
+          "wilson_upper": 0.9384175895226318
+        },
+        "id": {
+          "accepted_accuracy": 0.8421052631578947,
+          "flags": false,
+          "n_shadow_accepted": 19,
+          "wilson_upper": 0.9350798892795861
+        },
+        "language": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "long": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "new_class": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        }
+      },
+      "midpoint": {
+        "adversarial": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "global": {
+          "accepted_accuracy": 0.8888888888888888,
+          "flags": false,
+          "n_shadow_accepted": 9,
+          "wilson_upper": 0.9748085272868431
+        },
+        "id": {
+          "accepted_accuracy": 0.8888888888888888,
+          "flags": false,
+          "n_shadow_accepted": 9,
+          "wilson_upper": 0.9748085272868431
+        },
+        "language": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "long": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "new_class": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        }
+      }
+    },
+    "0.05": {
+      "end": {
+        "adversarial": {
+          "accepted_accuracy": 0.3333333333333333,
+          "flags": false,
+          "n_shadow_accepted": 3,
+          "wilson_upper": 0.7464661317187758
+        },
+        "global": {
+          "accepted_accuracy": 0.9047619047619048,
+          "flags": false,
+          "n_shadow_accepted": 42,
+          "wilson_upper": 0.95652122522572
+        },
+        "id": {
+          "accepted_accuracy": 0.9473684210526315,
+          "flags": false,
+          "n_shadow_accepted": 38,
+          "wilson_upper": 0.9824275810423749
+        },
+        "language": {
+          "accepted_accuracy": 1.0,
+          "flags": false,
+          "n_shadow_accepted": 1,
+          "wilson_upper": 0.9999999999999999
+        },
+        "long": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "new_class": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        }
+      },
+      "midpoint": {
+        "adversarial": {
+          "accepted_accuracy": 0.0,
+          "flags": false,
+          "n_shadow_accepted": 1,
+          "wilson_upper": 0.7301340512159458
+        },
+        "global": {
+          "accepted_accuracy": 0.9166666666666666,
+          "flags": false,
+          "n_shadow_accepted": 24,
+          "wilson_upper": 0.9720290557533112
+        },
+        "id": {
+          "accepted_accuracy": 0.9545454545454546,
+          "flags": false,
+          "n_shadow_accepted": 22,
+          "wilson_upper": 0.9897932481851921
+        },
+        "language": {
+          "accepted_accuracy": 1.0,
+          "flags": false,
+          "n_shadow_accepted": 1,
+          "wilson_upper": 0.9999999999999999
+        },
+        "long": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        },
+        "new_class": {
+          "accepted_accuracy": null,
+          "flags": false,
+          "n_shadow_accepted": 0,
+          "wilson_upper": 1.0
+        }
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "P2": true,
+      "P3": false,
+      "P4": false,
+      "P5": false,
+      "candidates": [
+        "adversarial"
+      ],
+      "confidence_shift": 0.14336093006408768,
+      "coverage_shift": 0.21422445561139025,
+      "global_accepted_accuracy": 0.9103139013452914,
+      "pass": false,
+      "report": {
+        "adversarial": {
+          "accepted_accuracy": 0.5454545454545454,
+          "accuracy": 0.2966666666666667,
+          "coverage": 0.25666666666666665,
+          "mean_confidence": 0.4150928518618951,
+          "n": 300,
+          "n_accepted": 77
+        },
+        "global": {
+          "accepted_accuracy": 0.9103139013452914,
+          "accuracy": 0.5503333333333333,
+          "coverage": 0.29733333333333334,
+          "mean_confidence": 0.3722506519886546,
+          "n": 3000,
+          "n_accepted": 892
+        },
+        "id": {
+          "accepted_accuracy": 0.9569620253164557,
+          "accuracy": 0.79375,
+          "coverage": 0.49375,
+          "mean_confidence": 0.5140660586960969,
+          "n": 1600,
+          "n_accepted": 790
+        },
+        "language": {
+          "accepted_accuracy": 0.9090909090909091,
+          "accuracy": 0.15,
+          "coverage": 0.0275,
+          "mean_confidence": 0.12227962784218153,
+          "n": 400,
+          "n_accepted": 11
+        },
+        "long": {
+          "accepted_accuracy": 1.0,
+          "accuracy": 0.58,
+          "coverage": 0.01,
+          "mean_confidence": 0.14762828899523228,
+          "n": 400,
+          "n_accepted": 4
+        },
+        "new_class": {
+          "accepted_accuracy": 0.0,
+          "accuracy": 0.0,
+          "coverage": 0.03333333333333333,
+          "mean_confidence": 0.20585079919558236,
+          "n": 300,
+          "n_accepted": 10
+        }
+      },
+      "seed": 0,
+      "shadow_0.05_midpoint_flags": {
+        "adversarial": false,
+        "global": false,
+        "id": false,
+        "language": false,
+        "long": false,
+        "new_class": false
+      },
+      "teacher_necessary_slices": []
+    },
+    {
+      "P2": true,
+      "P3": false,
+      "P4": false,
+      "P5": false,
+      "candidates": [
+        "adversarial"
+      ],
+      "confidence_shift": 0.14032369084172192,
+      "coverage_shift": 0.2188911222780569,
+      "global_accepted_accuracy": 0.9225512528473804,
+      "pass": false,
+      "report": {
+        "adversarial": {
+          "accepted_accuracy": 0.5434782608695652,
+          "accuracy": 0.21666666666666667,
+          "coverage": 0.15333333333333332,
+          "mean_confidence": 0.3844436365413754,
+          "n": 300,
+          "n_accepted": 46
+        },
+        "global": {
+          "accepted_accuracy": 0.9225512528473804,
+          "accuracy": 0.5503333333333333,
+          "coverage": 0.2926666666666667,
+          "mean_confidence": 0.37528789121102035,
+          "n": 3000,
+          "n_accepted": 878
+        },
+        "id": {
+          "accepted_accuracy": 0.9595959595959596,
+          "accuracy": 0.7975,
+          "coverage": 0.495,
+          "mean_confidence": 0.5166383611979641,
+          "n": 1600,
+          "n_accepted": 792
+        },
+        "language": {
+          "accepted_accuracy": 0.84,
+          "accuracy": 0.1675,
+          "coverage": 0.0625,
+          "mean_confidence": 0.14746149536151965,
+          "n": 400,
+          "n_accepted": 25
+        },
+        "long": {
+          "accepted_accuracy": 1.0,
+          "accuracy": 0.6075,
+          "coverage": 0.01,
+          "mean_confidence": 0.15645980730057957,
+          "n": 400,
+          "n_accepted": 4
+        },
+        "new_class": {
+          "accepted_accuracy": 0.0,
+          "accuracy": 0.0,
+          "coverage": 0.03666666666666667,
+          "mean_confidence": 0.2078022789635539,
+          "n": 300,
+          "n_accepted": 11
+        }
+      },
+      "seed": 1,
+      "shadow_0.05_midpoint_flags": {
+        "adversarial": false,
+        "global": false,
+        "id": false,
+        "language": false,
+        "long": false,
+        "new_class": false
+      },
+      "teacher_necessary_slices": []
+    },
+    {
+      "P2": true,
+      "P3": false,
+      "P4": false,
+      "P5": false,
+      "candidates": [
+        "adversarial"
+      ],
+      "confidence_shift": 0.14797154421643682,
+      "coverage_shift": 0.2245577889447236,
+      "global_accepted_accuracy": 0.9198606271777003,
+      "pass": false,
+      "report": {
+        "adversarial": {
+          "accepted_accuracy": 0.6229508196721312,
+          "accuracy": 0.2733333333333333,
+          "coverage": 0.20333333333333334,
+          "mean_confidence": 0.40454075392843686,
+          "n": 300,
+          "n_accepted": 61
+        },
+        "global": {
+          "accepted_accuracy": 0.9198606271777003,
+          "accuracy": 0.5416666666666666,
+          "coverage": 0.287,
+          "mean_confidence": 0.36764003783630544,
+          "n": 3000,
+          "n_accepted": 861
+        },
+        "id": {
+          "accepted_accuracy": 0.9532467532467532,
+          "accuracy": 0.780625,
+          "coverage": 0.48125,
+          "mean_confidence": 0.5050608293342652,
+          "n": 1600,
+          "n_accepted": 770
+        },
+        "language": {
+          "accepted_accuracy": 0.9473684210526315,
+          "accuracy": 0.1325,
+          "coverage": 0.0475,
+          "mean_confidence": 0.13645024392535066,
+          "n": 400,
+          "n_accepted": 19
+        },
+        "long": {
+          "accepted_accuracy": 1.0,
+          "accuracy": 0.6025,
+          "coverage": 0.005,
+          "mean_confidence": 0.14290174722230842,
+          "n": 400,
+          "n_accepted": 2
+        },
+        "new_class": {
+          "accepted_accuracy": 0.0,
+          "accuracy": 0.0,
+          "coverage": 0.03,
+          "mean_confidence": 0.20573254645499076,
+          "n": 300,
+          "n_accepted": 9
+        }
+      },
+      "seed": 2,
+      "shadow_0.05_midpoint_flags": {
+        "adversarial": false,
+        "global": false,
+        "id": false,
+        "language": false,
+        "long": false,
+        "new_class": false
+      },
+      "teacher_necessary_slices": []
+    },
+    {
+      "P2": true,
+      "P3": false,
+      "P4": false,
+      "P5": false,
+      "candidates": [
+        "adversarial"
+      ],
+      "confidence_shift": 0.1439240115938863,
+      "coverage_shift": 0.2188911222780569,
+      "global_accepted_accuracy": 0.9123006833712984,
+      "pass": false,
+      "report": {
+        "adversarial": {
+          "accepted_accuracy": 0.5942028985507246,
+          "accuracy": 0.27666666666666667,
+          "coverage": 0.23,
+          "mean_confidence": 0.40749385290487455,
+          "n": 300,
+          "n_accepted": 69
+        },
+        "global": {
+          "accepted_accuracy": 0.9123006833712984,
+          "accuracy": 0.547,
+          "coverage": 0.2926666666666667,
+          "mean_confidence": 0.371687570458856,
+          "n": 3000,
+          "n_accepted": 878
+        },
+        "id": {
+          "accepted_accuracy": 0.9536679536679536,
+          "accuracy": 0.785,
+          "coverage": 0.485625,
+          "mean_confidence": 0.5095573699934477,
+          "n": 1600,
+          "n_accepted": 777
+        },
+        "language": {
+          "accepted_accuracy": 0.8888888888888888,
+          "accuracy": 0.1275,
+          "coverage": 0.045,
+          "mean_confidence": 0.1365899935334128,
+          "n": 400,
+          "n_accepted": 18
+        },
+        "long": {
+          "accepted_accuracy": 1.0,
+          "accuracy": 0.6275,
+          "coverage": 0.0075,
+          "mean_confidence": 0.14909644109112058,
+          "n": 400,
+          "n_accepted": 3
+        },
+        "new_class": {
+          "accepted_accuracy": 0.0,
+          "accuracy": 0.0,
+          "coverage": 0.03666666666666667,
+          "mean_confidence": 0.2108272988859191,
+          "n": 300,
+          "n_accepted": 11
+        }
+      },
+      "seed": 3,
+      "shadow_0.05_midpoint_flags": {
+        "adversarial": false,
+        "global": false,
+        "id": false,
+        "language": false,
+        "long": false,
+        "new_class": false
+      },
+      "teacher_necessary_slices": []
+    },
+    {
+      "P2": true,
+      "P3": false,
+      "P4": false,
+      "P5": false,
+      "candidates": [
+        "adversarial"
+      ],
+      "confidence_shift": 0.1417787656576206,
+      "coverage_shift": 0.2148911222780569,
+      "global_accepted_accuracy": 0.9123595505617977,
+      "pass": false,
+      "report": {
+        "adversarial": {
+          "accepted_accuracy": 0.4444444444444444,
+          "accuracy": 0.20666666666666667,
+          "coverage": 0.21,
+          "mean_confidence": 0.403273829053434,
+          "n": 300,
+          "n_accepted": 63
+        },
+        "global": {
+          "accepted_accuracy": 0.9123595505617977,
+          "accuracy": 0.5406666666666666,
+          "coverage": 0.2966666666666667,
+          "mean_confidence": 0.37383281639512167,
+          "n": 3000,
+          "n_accepted": 890
+        },
+        "id": {
+          "accepted_accuracy": 0.9607097591888466,
+          "accuracy": 0.78375,
+          "coverage": 0.493125,
+          "mean_confidence": 0.5121783004032668,
+          "n": 1600,
+          "n_accepted": 789
+        },
+        "language": {
+          "accepted_accuracy": 0.9130434782608695,
+          "accuracy": 0.17,
+          "coverage": 0.0575,
+          "mean_confidence": 0.14521331270468632,
+          "n": 400,
+          "n_accepted": 23
+        },
+        "long": {
+          "accepted_accuracy": 1.0,
+          "accuracy": 0.595,
+          "coverage": 0.0125,
+          "mean_confidence": 0.15398227463301067,
+          "n": 400,
+          "n_accepted": 5
+        },
+        "new_class": {
+          "accepted_accuracy": 0.0,
+          "accuracy": 0.0,
+          "coverage": 0.03333333333333333,
+          "mean_confidence": 0.20450928296342988,
+          "n": 300,
+          "n_accepted": 10
+        }
+      },
+      "seed": 4,
+      "shadow_0.05_midpoint_flags": {
+        "adversarial": false,
+        "global": false,
+        "id": false,
+        "language": false,
+        "long": false,
+        "new_class": false
+      },
+      "teacher_necessary_slices": []
+    }
+  ],
+  "sensitivity_passes": 0,
+  "teacher": "massive_gold_labels",
+  "teacher_note": "No LLM API key was set. Gold MASSIVE intents stand in for the teacher.",
+  "verdict": "KILL"
+}
