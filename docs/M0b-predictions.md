@@ -30,15 +30,17 @@ The checkpoint was fine-tuned on this config's 300 training rows. Calibration an
 
 Permute the 300 training rows with `numpy` Generator(seed).
 
+The first draft of the table summed to 340 rows and also contradicted the 240-row stream used by the midpoint, the 12-draw budget, and the "about 2 policy labels" prediction. Corrected before any score, gates unchanged:
+
 | Role | Rows | Text | Gold |
 | --- | ---: | --- | --- |
 | calibration | 60 | original | original `action__label` |
-| control | 40 | original | original |
-| policy | 160 | original | cycle below, every row |
+| control | 80 | original | original |
+| policy | 80 | original | cycle below, every row |
 | relabel | 40 | original | `escalate_to_human` becomes `request_information`; other labels stay |
 | paraphrase | 40 | frozen substitutions below | original |
 
-Stream = those 240 production rows, concatenated in the order control, policy, relabel, paraphrase, then shuffled with a new Generator(seed). Midpoint is row 120 (half of 240).
+Stream = those 240 production rows, concatenated in the order control, policy, relabel, paraphrase, then shuffled with a new Generator(seed). Midpoint is row 120 (half of 240). Prefixes of the permuted index list, in the role order above.
 
 Sensitivity seeds `{0,1,2,3,4}` redraw this split, the shuffle, and the sample masks. They reuse cached forward passes. The locked threshold is refit on each seed's own calibration rows.
 
